@@ -1,17 +1,51 @@
 aid: graymatter-robotics
 name: GrayMatter Robotics
-description: 'GrayMatter Robotics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'GrayMatter Robotics is an American industrial AI and robotics company
+  founded in 2020 by SK Gupta, Ariyan Kabir and Brual Shah, headquartered at a 100,000-square-foot
+  AI Robotics Innovation Center in Carson, California. The company builds smart robotic
+  cells for surface treatment and finishing in high-mix, high-variability manufacturing
+  — sanding, grinding, polishing, buffing, blasting, spraying, trimming and AI-based
+  dimensional inspection and defect detection — pairing off-the-shelf industrial robot
+  arms, 3D scanners and tools with its own physics-informed AI stack (GMR-AI, marketed
+  as Factory SuperIntelligence / FSI). Its flagship Scan&Sand cell 3D-scans each incoming
+  part and generates the toolpath autonomously, so a cell can change over between parts
+  in minutes without fixturing or teach-pendant programming, and the company claims
+  4-12x throughput over manual finishing with 30-70% less consumable waste. GrayMatter
+  sells robots-as-a-service on a monthly subscription that bundles hardware, software,
+  training, remote monitoring and 24/7 support instead of an upfront capital purchase,
+  and counts Boeing, Caterpillar and Oshkosh among its customers. It raised a $45M
+  Series B in June 2024 led by Wellington Management with NGP Capital, Euclidean Capital,
+  B Capital, 3M Ventures, Calibrate VC, OCA Ventures, Pathbreaker VC, Stage Venture
+  Partners and Swift VC participating. GrayMatter Robotics is a robotics hardware and
+  AI systems manufacturer: as of the August 2026 enrichment pass it publishes no public
+  developer API, developer portal, SDK, CLI or machine-readable API contract (OpenAPI,
+  AsyncAPI, GraphQL, gRPC), no MCP server and no A2A agent card. Note that this company
+  is unrelated to greymatter.io, the service-mesh vendor with a similar name.'
 url: https://raw.githubusercontent.com/api-evangelist/graymatter-robotics/refs/heads/main/apis.yml
+image: https://factory.graymatter-robotics.com/wp-content/uploads/2026/07/gmr-web-thumbnail_default.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Robotics
+- Industrial Robotics
+- Manufacturing
+- Automation
+- Artificial Intelligence
+- Physical AI
+- Machine Vision
+- Surface Finishing
+- Sanding
+- Aerospace
+- Defense
+- Heavy Equipment
+- Robots as a Service
+- Factory Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +54,78 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  name: GrayMatter Robotics (canonical domain; 302 redirects to factory.)
+  url: https://graymatter-robotics.com/
+- type: Website
+  name: GrayMatter Robotics primary site
+  url: https://factory.graymatter-robotics.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/graymatter-robotics_stock/
+- type: About
+  url: https://factory.graymatter-robotics.com/about-us/
+- type: Products
+  name: FSI — Factory SuperIntelligence platform
+  url: https://factory.graymatter-robotics.com/platform/
+- type: Products
+  name: Solutions — sanding, grinding, polishing, buffing, blasting, spraying, inspection
+  url: https://factory.graymatter-robotics.com/solutions/
+- type: Products
+  name: Factory of the Future
+  url: https://factory.graymatter-robotics.com/factory-of-the-future/
+- type: Industries
+  url: https://factory.graymatter-robotics.com/industries/
+- type: Resources
+  url: https://factory.graymatter-robotics.com/resources/
+- type: WhitePapers
+  url: https://factory.graymatter-robotics.com/whitepapers/
+- type: CaseStudies
+  url: https://factory.graymatter-robotics.com/testimonials/
+- type: Blog
+  url: https://factory.graymatter-robotics.com/blog/
+- type: BlogRSS
+  url: https://factory.graymatter-robotics.com/blog/feed/
+- type: Press
+  url: https://factory.graymatter-robotics.com/press/
+- type: PressRSS
+  url: https://factory.graymatter-robotics.com/feed/
+- type: Investors
+  url: https://factory.graymatter-robotics.com/investors/
+- type: Support
+  name: Contact GrayMatter Robotics
+  url: https://factory.graymatter-robotics.com/contact-us/
+- type: Contact
+  name: General inquiries
+  url: mailto:info@graymatter-robotics.com
+- type: Demo
+  name: Request a free demo
+  url: https://factory.graymatter-robotics.com/demo/
+- type: Careers
+  url: https://factory.graymatter-robotics.com/careers/
+- type: Careers
+  name: Open roles (Ashby)
+  url: https://jobs.ashbyhq.com/graymatter-robotics
+- type: PrivacyPolicy
+  url: https://factory.graymatter-robotics.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/GrayMatter-Robotics
+- type: LinkedIn
+  url: https://www.linkedin.com/company/graymatter-robotics/
+- type: Twitter
+  url: https://twitter.com/GrayMatterRobot
+- type: YouTube
+  url: https://www.youtube.com/@graymatterrobotics
+- type: Instagram
+  url: https://www.instagram.com/graymatter_robotics/
+- type: Facebook
+  url: https://www.facebook.com/GrayMatterRobotics/
+- type: LLMsTxt
+  url: llms/graymatter-robotics-llms.txt
+- type: WellKnown
+  url: well-known/graymatter-robotics-well-known.yml
+- type: DomainSecurity
+  url: security/graymatter-robotics-domain-security.yml
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

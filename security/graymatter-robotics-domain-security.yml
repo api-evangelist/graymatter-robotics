@@ -1,0 +1,21 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: graymatter-robotics.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  8 04:17:42 2026 GMT
+  hsts: null
+- host: factory.graymatter-robotics.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  5 20:29:43 2026 GMT
+  hsts: null
+domains:
+- domain: graymatter-robotics.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

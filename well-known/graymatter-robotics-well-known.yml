@@ -1,0 +1,141 @@
+generated: '2026-08-04'
+method: probed
+source: https://graymatter-robotics.com/ + https://factory.graymatter-robotics.com/
+note: >-
+  Probed the full /.well-known/ discovery surface on the canonical GrayMatter Robotics
+  domain and on factory.graymatter-robotics.com, the WordPress site the apex 302-redirects
+  to. Nothing is published. GrayMatter Robotics is an industrial robotics and AI systems
+  manufacturer selling robots-as-a-service; it has no developer-facing API surface,
+  so an empty well-known result is the expected, honest outcome.
+hosts:
+- host: https://graymatter-robotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://factory.graymatter-robotics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /security.txt
+    status: 404
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery run against every host that resolves. No OpenAPI, Swagger,
+    GraphQL, MCP or A2A surface exists. No agent card was found, so no a2a/ artifact
+    was written (search-only artifact — never generated or derived). Both hosts return
+    a true HTTP 404 with a WordPress HTML 404 body for unknown paths, so there is no
+    SPA catch-all false positive on the /.well-known/ probes.
+  probes:
+  - host: https://factory.graymatter-robotics.com
+    paths:
+      /openapi.json: 404
+      /openapi.yaml: 404
+      /swagger.json: 404
+      /v1/openapi.json: 404
+      /api-docs: 404
+      /docs: 404
+      /redoc: 404
+      /llms.txt: 404
+      /robots.txt: 200
+      /sitemap.xml: 404
+      /sitemap_index.xml: 200
+  - host: https://graymatter-robotics.com
+    paths:
+      /openapi.json: 404
+      /openapi.yaml: 404
+      /swagger.json: 404
+      /v1/openapi.json: 404
+      /api-docs: 404
+      /docs: 404
+      /redoc: 404
+      /llms.txt: 404
+      /robots.txt: 200
+      /sitemap.xml: 200
+  subdomain_enumeration:
+    method: certificate-transparency (crt.sh) + DNS resolution
+    ct_result: only the apex graymatter-robotics.com appears in certificate transparency
+    dns_nxdomain:
+    - api.graymatter-robotics.com
+    - docs.graymatter-robotics.com
+    - developer.graymatter-robotics.com
+    - developers.graymatter-robotics.com
+    - app.graymatter-robotics.com
+    - portal.graymatter-robotics.com
+    - cloud.graymatter-robotics.com
+    - console.graymatter-robotics.com
+    - dashboard.graymatter-robotics.com
+    - my.graymatter-robotics.com
+    - fleet.graymatter-robotics.com
+    - cell.graymatter-robotics.com
+    - insights.graymatter-robotics.com
+    - gmr.graymatter-robotics.com
+    - fsi.graymatter-robotics.com
+    - status.graymatter-robotics.com
+    - support.graymatter-robotics.com
+    - help.graymatter-robotics.com
+    - partner.graymatter-robotics.com
+    note: >-
+      The FSI platform's remote command/monitoring dashboards referenced on the platform
+      page are not exposed on any public hostname under graymatter-robotics.com; they
+      are delivered as part of the subscribed robotic-cell deployment.
+  github_org:
+    searched: true
+    result: found-no-specs
+    url: https://github.com/GrayMatter-Robotics
+    public_repos: 27
+    note: >-
+      A public GitHub organization exists (GrayMatter-Robotics, 27 public repositories),
+      but 23 of 27 are forks of upstream open-source robotics libraries (tesseract,
+      trajopt, descartes_light, opw_kinematics, toppra, PCL, OpenCV, FCL, TEASER++,
+      segment-anything, zivid-ros, ros1_bridge, nlopt, rpclib, libnabo, orocos KDL,
+      SQLiteCpp, toml11 and others). The only non-fork repositories are esh-savings-tool
+      (a Python ergonomic/injury-risk savings calculator), fcl, igl and an empty test
+      repo. No first-party OpenAPI, AsyncAPI, GraphQL schema, .proto, SDK or client
+      library is published in the org. No .proto was harvested to grpc/ because every
+      protobuf present belongs to an upstream project, not to GrayMatter.
+  package_registries:
+    searched: [npm, pypi]
+    result: none
+    note: >-
+      No first-party client library published under graymatter, graymatter-robotics
+      or gmr-ai on npm or PyPI. Unrelated same-name packages exist (@gsa-tts/graymatter-*,
+      storybook-addon-docs-graymatter) and were correctly excluded.
+  disambiguation: >-
+    GrayMatter Robotics (graymatter-robotics.com) must not be confused with greymatter.io,
+    an unrelated service-mesh / API-gateway vendor that does publish developer documentation
+    and APIs. Searches for "GrayMatter API documentation" surface greymatter.io first;
+    none of that surface belongs to this company.

@@ -1,0 +1,62 @@
+# GrayMatter Robotics
+
+> GrayMatter Robotics is an American industrial AI and robotics company founded in 2020 by SK Gupta, Ariyan Kabir and Brual Shah, headquartered at a 100,000-square-foot AI Robotics Innovation Center in Carson, California. It builds smart robotic cells for surface treatment and finishing in high-mix, high-variability manufacturing — sanding, grinding, polishing, buffing, blasting, spraying, trimming and AI-based dimensional inspection and defect detection — pairing off-the-shelf industrial robot arms, 3D scanners and tools with its own physics-informed AI stack (GMR-AI, marketed as Factory SuperIntelligence / FSI). Its flagship Scan&Sand cell 3D-scans each incoming part and generates the toolpath autonomously, so a cell changes over between parts in minutes with no fixturing and no teach-pendant programming. GrayMatter sells robots-as-a-service on a monthly subscription that bundles hardware, software, training, remote monitoring and 24/7 support, and counts Boeing, Caterpillar and Oshkosh among its customers.
+
+## API surface
+
+GrayMatter Robotics is a robotics hardware and AI systems manufacturer. As of 2026-08-04 it publishes **no** public API, developer portal, SDK, CLI, machine-readable API contract (OpenAPI/AsyncAPI/GraphQL/gRPC), MCP server or A2A agent card.
+
+Contract discovery was run against every hostname that resolves — `graymatter-robotics.com` and `factory.graymatter-robotics.com` (the WordPress site the apex 302-redirects to) — covering `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`, `/llms.txt` and the full `/.well-known/` surface including `security.txt`, `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`, `api-catalog`, `ai-plugin.json`, `agent-card.json`, `agent.json` and `mcp.json`. Every one returned a true HTTP 404. Certificate-transparency enumeration returned only the apex domain, and DNS lookups for `api.`, `docs.`, `developer.`, `app.`, `portal.`, `cloud.`, `console.`, `dashboard.`, `fleet.`, `status.` and thirteen other candidate subdomains all NXDOMAIN.
+
+The FSI platform does expose remote command and monitoring dashboards, but only to subscribed customers as part of a deployed robotic cell — there is no public hostname, no public console, and no documented data or integration interface.
+
+A public GitHub organization exists at [GrayMatter-Robotics](https://github.com/GrayMatter-Robotics) with 27 repositories, but 23 are forks of upstream open-source robotics libraries (Tesseract, trajopt, descartes_light, opw_kinematics, TOPP-RA, PCL, OpenCV, FCL, TEASER++, segment-anything, zivid-ros, ros1_bridge, NLopt, rpclib, libnabo, Orocos KDL and others). No first-party specification, SDK or client library is published there or on npm or PyPI.
+
+**Disambiguation:** GrayMatter Robotics is *not* [greymatter.io](https://greymatter.io/), an unrelated service-mesh and API-gateway vendor with a similar name that does publish developer documentation and APIs.
+
+## Company
+
+- [GrayMatter Robotics](https://factory.graymatter-robotics.com/): Primary company website. `graymatter-robotics.com` 302-redirects here.
+- [About us](https://factory.graymatter-robotics.com/about-us/): Mission, team, investors and awards.
+- [Investors](https://factory.graymatter-robotics.com/investors/): 3M Ventures, B Capital, Calibrate VC, Euclidean Capital, NGP Capital, NSF, OCA Ventures, Pathbreaker VC, Stage Venture Partners, Swift VC, Wellington Management.
+- [Careers](https://factory.graymatter-robotics.com/careers/) — [open roles on Ashby](https://jobs.ashbyhq.com/graymatter-robotics)
+- [Contact](https://factory.graymatter-robotics.com/contact-us/): info@graymatter-robotics.com · 1-310-283-2335 · 2226 E 223rd St., Carson, CA 90810
+
+## Platform and solutions
+
+- [FSI — Factory SuperIntelligence](https://factory.graymatter-robotics.com/platform/): One AI platform for an entire factory network — multi-robot coordination, data integration and observability, an AI optimization engine, and enterprise governance and security.
+- [Solutions](https://factory.graymatter-robotics.com/solutions/): the full autonomous finishing portfolio.
+  - [Sanding](https://factory.graymatter-robotics.com/solutions/sanding/) — the Scan&Sand cell
+  - [Grinding](https://factory.graymatter-robotics.com/solutions/grinding/)
+  - [Polishing](https://factory.graymatter-robotics.com/solutions/polishing/)
+  - [Buffing](https://factory.graymatter-robotics.com/solutions/buffing/)
+  - [Blasting](https://factory.graymatter-robotics.com/solutions/blasting/)
+  - [Spraying](https://factory.graymatter-robotics.com/solutions/spraying/)
+  - [Inspection](https://factory.graymatter-robotics.com/solutions/inspection/) — AI dimensional inspection and defect detection
+- [Factory of the Future](https://factory.graymatter-robotics.com/factory-of-the-future/)
+- [Industries](https://factory.graymatter-robotics.com/industries/): aerospace, defense, heavy equipment and general high-mix manufacturing.
+
+## Resources and writing
+
+- [Resources](https://factory.graymatter-robotics.com/resources/)
+- [White papers](https://factory.graymatter-robotics.com/whitepapers/)
+- [Blog](https://factory.graymatter-robotics.com/blog/) ([RSS](https://factory.graymatter-robotics.com/blog/feed/))
+- [Press](https://factory.graymatter-robotics.com/press/) ([site RSS](https://factory.graymatter-robotics.com/feed/))
+- [Testimonials and case studies](https://factory.graymatter-robotics.com/testimonials/)
+
+## Commercial
+
+- [Request a free demo](https://factory.graymatter-robotics.com/demo/): the entry point to the robots-as-a-service subscription. No self-serve sign-up, no published price list.
+- [Privacy Policy](https://factory.graymatter-robotics.com/privacy-policy/)
+- No terms-of-service page is published at any conventional path (`/terms/`, `/terms-of-service/`, `/terms-and-conditions/` all 404).
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/graymatter-robotics/refs/heads/main/apis.yml): APIs.json 0.20 index for this company.
+- well-known/graymatter-robotics-well-known.yml: probed `/.well-known/` and contract-discovery results (all negative), plus the GitHub-org and package-registry searches.
+- security/graymatter-robotics-domain-security.yml: probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for graymatter-robotics.com and factory.graymatter-robotics.com.
+
+---
+generated: 2026-08-04
+method: generated
+source: apis.yml + https://factory.graymatter-robotics.com/ + https://github.com/GrayMatter-Robotics
