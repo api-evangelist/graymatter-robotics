@@ -22,6 +22,17 @@ description: 'GrayMatter Robotics is an American industrial AI and robotics comp
   AsyncAPI, GraphQL, gRPC), no MCP server and no A2A agent card. Note that this company
   is unrelated to greymatter.io, the service-mesh vendor with a similar name.'
 url: https://raw.githubusercontent.com/api-evangelist/graymatter-robotics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://factory.graymatter-robotics.com/wp-content/uploads/2026/07/gmr-web-thumbnail_default.png
 x-type: company
 x-source: harvest:secondary-market
