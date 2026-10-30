@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-GrayMatter Robotics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/graymatter-robotics_stock/
+GrayMatter Robotics is an American industrial AI and robotics company founded in 2020 by SK Gupta, Ariyan Kabir and Brual Shah, headquartered at a 100,000-square-foot AI Robotics Innovation Center in Carson, California. The company builds smart robotic cells for surface treatment and finishing in high-mix, high-variability manufacturing — sanding, grinding, polishing, buffing, blasting, spraying, trimming and AI-based dimensional inspection and defect detection — pairing off-the-shelf industrial robot arms, 3D scanners and tools with its own physics-informed AI stack (GMR-AI, marketed as Factory SuperIntelligence / FSI). Its flagship Scan&Sand cell 3D-scans each incoming part and generates the toolpath autonomously, so a cell can change over between parts in minutes without fixturing or teach-pendant programming, and the company claims 4-12x throughput over manual finishing with 30-70% less consumable waste. GrayMatter sells robots-as-a-service on a monthly subscription that bundles hardware, software, training, remote monitoring and 24/7 support instead of an upfront capital purchase, and counts Boeing, Caterpillar and Oshkosh among its customers. It raised a $45M Series B in June 2024 led by Wellington Management with NGP Capital, Euclidean Capital, B Capital, 3M Ventures, Calibrate VC, OCA Ventures, Pathbreaker VC, Stage Venture Partners and Swift VC participating. GrayMatter Robotics is a robotics hardware and AI systems manufacturer: as of the August 2026 enrichment pass it publishes no public developer API, developer portal, SDK, CLI or machine-readable API contract (OpenAPI, AsyncAPI, GraphQL, gRPC), no MCP server and no A2A agent card. Note that this company is unrelated to greymatter.io, the service-mesh vendor with a similar name.
+
+**Areas:** Company · Robotics · Industrial Robotics · Manufacturing · Automation · Artificial Intelligence · Physical AI · Machine Vision · Surface Finishing · Sanding · Aerospace · Defense
+
+## GrayMatter Robotics on APIs.io
+
+Everything profiled for GrayMatter Robotics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/graymatter-robotics/](https://apis.io/providers/graymatter-robotics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Graymatter Robotics Domain Security](https://apis.io/security/graymatter-robotics/graymatter-robotics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://graymatter-robotics.com/)
+- [Support](https://factory.graymatter-robotics.com/contact-us/)
+- [Blog](https://factory.graymatter-robotics.com/blog/)
+- [Privacy policy](https://factory.graymatter-robotics.com/privacy-policy/)
+- [GitHub](https://github.com/GrayMatter-Robotics)
+
+## API Evangelist rating
+
+**Kin Score 8.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/graymatter-robotics/](https://apis.io/providers/graymatter-robotics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for GrayMatter Robotics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/graymatter-robotics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
